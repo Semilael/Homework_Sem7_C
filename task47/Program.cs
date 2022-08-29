@@ -1,4 +1,4 @@
-﻿// Задайте двумерный массив размером m×n, заполненный случайными вещественными числами
+﻿// // Задайте двумерный массив размером m×n, заполненный случайными вещественными числами
 double [,] GetArray(int m, int n, int min, int max)
 {
     double[,] result = new double[m, n];
@@ -30,5 +30,5 @@ int rows = int.Parse(Console.ReadLine());
 Console.Write("Введите количество столбцов массива: ");
 int columns = int.Parse(Console.ReadLine());
 
-double[,] array = GetArray(rows, columns, 0, 100);
+double[,] array = GetArray(rows, columns, -100, 100);
 PrintArray(array);
